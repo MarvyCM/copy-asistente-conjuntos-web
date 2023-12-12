@@ -21,7 +21,7 @@
         "symfony/framework-bundle": "4.4.*",
 		"symfony/security-http": "4.4.*",
         "symfony/intl": "4.4.*",
-        "symfony/ldap": "4.4.*",
+        "symfony/ldap": "6.0.*",
         "symfony/mailer": "4.4.*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/process": "4.4.*",
@@ -52,7 +52,10 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": false
+        }
     },
     "autoload": {
         "psr-4": {
