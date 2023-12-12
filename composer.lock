@@ -4245,7 +4245,7 @@
         },
         {
             "name": "symfony/ldap",
-            "version": "v4.4.20",
+            "version": "6.0.*",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ldap.git",
