@@ -11,6 +11,10 @@ jobs:
   psalm:
     name: Psalm
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -19,7 +23,7 @@ jobs:
         uses: docker://ghcr.io/psalm/psalm-github-actions
         with:
           security_analysis: true
-          report_file: results-r.sarif
+          report_file: results.sarif
           composer_require_dev: true
           composer_ignore_platform_reqs: true
 
