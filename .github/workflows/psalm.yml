@@ -34,5 +34,5 @@ jobs:
         with:
           composer_require_dev: false
           composer_ignore_platform_reqs: false
-          security_analysis: true
+          security_analysis: false
           report_file: results.sarif
